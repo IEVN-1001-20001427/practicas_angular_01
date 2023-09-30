@@ -1,0 +1,17 @@
+<div class="d-flex">
+    <div class="container">
+        <mat-form-field>
+            <input matInput [(ngModel)]="num1" type="number" placeholder="Numero 1">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="num2" type="number" placeholder="Numero 2">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="multiplicar()">multiplicar</button>
+    </div>
+    
+    <div class="container">
+        <p>num1: {{num1}}</p>
+        <p>num2: {{num2}}</p>
+        <h3>{{res}}</h3>
+    </div>
+</div>

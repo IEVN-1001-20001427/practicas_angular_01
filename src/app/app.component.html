@@ -1,26 +1,17 @@
-<div class="row">
-  <div class="col-6">
-      <div class="mb-3">
-          <label for="temp" class="form-label">Temperatura</label>
-          <input type="text" [(ngModel)]="temp" class="form-control" name="temp" placeholder="Temperatura">
-      </div>
-      <div class="mb-3">
-        <h3>convertir a:</h3>
-          <div class="container d-flex flex-column">
-              <div>
-                <input type="radio" [(ngModel)]="operacion" name="operacion" value="c">
-                <label for="num2" class="form-label">Centigrados</label>                  
-              </div>
-              <div>
-                <input type="radio" [(ngModel)]="operacion" name="operacion" value="f">
-                <label for="num2" class="form-label">farenheit</label>                  
-              </div>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!--<app-grados></app-grados>-->
+      <app-multiplicacion-ax-b></app-multiplicacion-ax-b>
 
-          <button class="btn btn-primary" (click)="calcular()">Calcular</button>
-      </div>
+    </div>
   </div>
-  <div class="col-6">
-      <h2>Resultado: {{resultado}}</h2>
-  </div>
-</div>
+</body>
+</html>
