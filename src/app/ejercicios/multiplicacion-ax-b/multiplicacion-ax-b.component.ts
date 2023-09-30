@@ -14,7 +14,7 @@ export class MultiplicacionAxBComponent {
 
   multiplicar():void{
     this.res = ''
-    this.rs = 0
+    this.rs = 0;
     //this.rs = this.num1 * this.num2;
 
     for(let i=0; i<this.num2; i++){
