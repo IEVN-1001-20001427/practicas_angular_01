@@ -1,0 +1,64 @@
+<div id="herebg" class="container-fluid d-flex justify-content-center flex-column p-3 text-white" style="min-width: 800px; background-color: blue;">
+    <div class="container-fluid d-flex justify-content-center my-3">
+        <h1 style="color: black; font-style: italic; font-weight: bold; background-color: white;" class="p-3">Cinepolis</h1>
+    </div>
+    <div class="container-fluid d-flex justify-content-center my-3">
+        <div class="col-10 border border-white p-4 mx-auto">
+            <p>Costo del boleto: ${{costoboleto}}</p>
+            <p>{{mensaje}}</p>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center my-3">
+        <div class="col-5 border border-white p-4 mx-auto">
+            <h3>Entradas</h3>
+            <div class="container-fluid">
+                <div>
+                    <label for="" class="mx-2">Nombre</label>
+                    <mat-form-field>
+                        <input matInput type="text" [(ngModel)]="nombre" placeholder="Nombre">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <label for="" class="mx-2">Cantidad de compradores</label>
+                    <mat-form-field>
+                        <input matInput type="number" [(ngModel)]="compradores" placeholder="Compradores">
+                    </mat-form-field>
+                </div>
+                <div class="d-flex">
+                    <label class="mx-2">Tarjeta del cine</label>
+                    <mat-radio-group aria-label="Select an option" class="d-flex">
+                        <div class="px-2">
+                            <input type="radio" [(ngModel)]="tarjeta" name="tarjeta" value="si">
+                            <label for="num2" class="form-label">si</label>                  
+                        </div>
+                        <div class="px-2">
+                            <input type="radio" [(ngModel)]="tarjeta" name="tarjeta" value="no">
+                            <label for="num2" class="form-label">no</label>                  
+                        </div>
+                    </mat-radio-group>
+                </div>
+                <div>
+                    <label for="" class="mx-2">Cantidad de boletos</label>
+                    <mat-form-field>
+                        <input matInput type="number" [(ngModel)]="boletos" placeholder="Boletos">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 border border-white p-4 mx-auto">
+            <h3>Salidas</h3>
+            <div class="container-fluid d-flex">
+                <p>Total a Pagar: <span class="p-2" style="background-color: white; color: black; border-radius: 5px;">{{total}}</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center my-3">
+        <div class="col-5 d-flex flex-column border border-white p-4">
+            <h3>Acciones</h3>
+            <div class="container-fluid d-flex ">
+                <button mat-raised-button class="mx-auto" (click)="procesar()">Procesar</button>
+                <button mat-raised-button class="mx-auto">Salir</button>
+            </div>
+        </div>
+    </div>
+</div>

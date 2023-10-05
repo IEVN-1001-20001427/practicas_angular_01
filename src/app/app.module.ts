@@ -3,27 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+
 import { MultiplicacionAxBComponent } from './ejercicios/multiplicacion-ax-b/multiplicacion-ax-b.component';
 import { GradosComponent } from './ejercicios/grados/grados.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material/material.module';
+import { MenuComponent } from './menu/menu/menu.component';
+import { CinepolisComponent } from './ejercicios/cinepolis/cinepolis.component';
 
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
     AppComponent,
     MultiplicacionAxBComponent,
-    GradosComponent
+    GradosComponent,
+    MenuComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatRadioModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
