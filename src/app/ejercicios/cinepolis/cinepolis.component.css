@@ -1,3 +1,5 @@
 #herebg{
     background-image: url('./cinepolis.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
