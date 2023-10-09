@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CinepolisComponent {
 
-  costoboleto:number = 12000;
+  costoboleto:number = 12;
 
   nombre:string = '';
   compradores:number = 0;
