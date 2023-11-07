@@ -1,16 +1,24 @@
-<mat-toolbar color="primary">
-    <span>
-        <a mat-button router-link="">
-            <mat-icon>fact_check</mat-icon>pwa-1001
-        </a>
-    </span>
-    <div>
-        <a mat-button router-link="">Grados</a>
+<div class="contenedor-padre">
+    <mat-toolbar color="primary">
+        <span class="nav-item mx-2">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">
+                <mat-icon>fact_check</mat-icon>pwa-1001
+            </a>
+        </span>
+        <div class="nav-item mx-2">
+            <a class="nav-link" routerLink="/grados" routerLinkActive="active" ariaCurrentWhenActive="page">Grados</a>
+        </div>
+        <div class="nav-item mx-2">
+            <a class="nav-link" routerLink="/multiplicacion" routerLinkActive="active" ariaCurrentWhenActive="page">Multiplicacion</a>
+        </div>
+        <div class="nav-item mx-2">
+            <a class="nav-link" routerLink="/cinepolis" routerLinkActive="active" ariaCurrentWhenActive="page">Cinepolis</a>
+        </div>
+        <div class="nav-item mx-2">
+            <a class="nav-link" routerLink="/examenp2" routerLinkActive="active" ariaCurrentWhenActive="page">Examen</a>
+        </div>
+    </mat-toolbar>
+    <div class="container-fluid p-5">
+        <router-outlet></router-outlet>
     </div>
-    <div>
-        <a mat-button router-link="">Multiplicacion AxB</a>
-    </div>
-    <div>
-        <a mat-button router-link="">Cinepolis</a>
-    </div>
-</mat-toolbar>
+</div>
