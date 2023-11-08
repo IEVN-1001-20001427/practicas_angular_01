@@ -8,7 +8,7 @@ import { HomeComponent } from "./home/home.component";
 import { ExamenP2Component } from "./ejercicios/examen-p2/examen-p2.component";
 
 const routes:Routes=[
-    {path: '', redirectTo:'/examenp2',pathMatch:'full'},
+    {path: '', redirectTo:'/home',pathMatch:'full'},
     {path: 'home', component: HomeComponent},
     {path: 'cinepolis', component: CinepolisComponent},
     {path: 'grados', component: GradosComponent},

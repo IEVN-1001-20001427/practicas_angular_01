@@ -1,0 +1,15 @@
+.crds{
+    width: 30%;
+}
+
+@media screen and (max-width: 1000px){
+    .crds{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .crds{
+        width: 95%;
+    }
+}
